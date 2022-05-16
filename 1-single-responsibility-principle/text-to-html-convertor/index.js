@@ -8,7 +8,7 @@ const readline = require('readline').createInterface({
 
 readline.question('Please specify the file to convert to HTML.', path => {
     var fileProcessor = new FileProcessor(path);
-    var textrocessor = new TextProcessor(fileProcessor);
-    textrocessor.convertText();
+    var texPtrocessor = new TextProcessor(fileProcessor);
+    texPtrocessor.convertText();
     readline.close();
 });

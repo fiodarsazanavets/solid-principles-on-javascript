@@ -1,10 +1,7 @@
 class TextProcessor {
 
-    #fileProcessor = null;
-
-    convertText() {
-        var inputText = this.#fileProcessor.readAllText();
-
+    convertText(inputText) {
+        
         var paragraphs = inputText.split(/[\r\n\?|\n]/);
         var textToWrite = '';
     
@@ -14,11 +11,7 @@ class TextProcessor {
         }
     
         textToWrite += '<br/>';
-        this.#fileProcessor.writeToFile(textToWrite);
-    }
-
-    constructor(fileProcessor) {
-        this.#fileProcessor = fileProcessor;
+        return textToWrite;
     }
 }
 
