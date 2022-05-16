@@ -26,7 +26,7 @@ readline.question('Please specify the file to convert to HTML.', path => {
     var texPtrocessor = new MdTextProcessor(tagsToReplace);
 
     var inputText = fileProcessor.readAllText();
-    var outputText = texPtrocessor.convertText(inputText);
+    var outputText = texPtrocessor.convertMdText(inputText);
     fileProcessor.writeToFile(outputText);
     readline.close();
 });

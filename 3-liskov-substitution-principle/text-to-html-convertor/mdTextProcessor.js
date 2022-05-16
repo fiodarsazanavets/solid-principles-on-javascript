@@ -4,7 +4,7 @@ class MdTextProcessor extends TextProcessor {
 
     #tagsToReplace = null;
 
-    convertText(inputText) {
+    convertMdText(inputText) {
         
         var processedText = super.convertText(inputText);
 

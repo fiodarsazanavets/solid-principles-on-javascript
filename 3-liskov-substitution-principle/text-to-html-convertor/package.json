@@ -4,8 +4,11 @@
   "description": "The application reads a textual file from a specified location and converts the text into HTML by wrapping each paragraph in P tags. The output is then written into a new HTML file.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
 }
