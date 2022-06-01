@@ -23,10 +23,10 @@ const tagsToReplace = {
 
 readline.question('Please specify the file to convert to HTML.', path => {
     var fileProcessor = new FileProcessor(path);
-    var texPtrocessor = new MdTextProcessor(tagsToReplace);
+    var textProcessor = new MdTextProcessor(tagsToReplace);
 
     var inputText = fileProcessor.readAllText();
-    var outputText = texPtrocessor.convertMdText(inputText);
+    var outputText = textProcessor.convertMdText(inputText);
     fileProcessor.writeToFile(outputText);
     readline.close();
 });
